@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
+    <meta
+      name="description"
+      content="Frontend Mentor challenge - QR code component using HTML and CSS"
+    />
+
     <link
       rel="icon"
       type="image/png"
@@ -28,24 +33,32 @@
     <style></style>
   </head>
   <body>
-    <div class="card">
-      <img src="images/image-qr-code.png" alt="QR code" class="card__img" />
-      <div class="card__body">
-        <h1 class="card__title">
-          Improve your front-end skills by building projects
-        </h1>
-        <p>
-          Scan the QR code to visit Frontend Mentor and take your coding sills
-          to the next level
-        </p>
+    <main class="container" role="main">
+      <div class="card">
+        <img
+          src="images/image-qr-code.png"
+          width="288"
+          height="288"
+          alt="QR code to frontendmentor.io"
+          class="card__img"
+        />
+        <div class="card__body">
+          <h1 class="card__title">
+            Improve your front-end skills by building projects
+          </h1>
+          <p>
+            Scan the QR code to visit Frontend Mentor and take your coding sills
+            to the next level
+          </p>
+        </div>
       </div>
-    </div>
+    </main>
 
-    <div class="attribution">
+    <footer class="attribution" role="contentinfo">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="https://sahanbandara.com">Sahan Bandara</a>.
-    </div>
+    </footer>
   </body>
 </html>

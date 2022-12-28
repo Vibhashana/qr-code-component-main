@@ -66,10 +66,16 @@ body {
   color: var(--clr-primary-100);
 }
 
+.container {
+  margin-inline: max(2rem, calc((100vw - var(--card-width)) / 2));
+  display: grid;
+  place-items: center;
+  height: 100%;
+  flex: 1;
+}
+
 .card {
   max-width: var(--card-width);
-  margin-block-start: auto;
-  margin-inline: max(2rem, calc((100vw - var(--card-width)) / 2));
   background-color: var(--white);
   border-radius: 1rem;
   padding: 1rem;
