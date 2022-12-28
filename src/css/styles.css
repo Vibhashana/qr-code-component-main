@@ -1,0 +1,98 @@
+/* Prevent adjustments of font size after orientation changes in iOS. */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.25;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  border-style: none;
+}
+
+:root {
+  --clr-primary-100: hsl(220, 15%, 55%);
+  --clr-primary-500: hsl(228, 45%, 44%);
+  --clr-primary-700: hsl(218, 44%, 22%);
+
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+
+  --card-width: 20rem;
+}
+
+h1 {
+  font-size: 1.4rem;
+  color: var(--clr-primary-700);
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-block-end: 1.65rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  background-color: var(--light-gray);
+  font-family: "Outfit", sans-serif;
+  color: var(--clr-primary-100);
+}
+
+.card {
+  max-width: var(--card-width);
+  margin-block-start: auto;
+  margin-inline: max(2rem, calc((100vw - var(--card-width)) / 2));
+  background-color: var(--white);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0.5rem 2.5rem rgb(0 0 0 / 15%);
+}
+
+.card__img {
+  margin-bottom: 1rem;
+  border-radius: 0.75rem;
+}
+
+.card__body {
+  padding-inline: 0.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-block: auto 0.5rem;
+  padding-block-start: 0.5rem;
+}
+
+.attribution a {
+  color: var(--clr-primary-500);
+}
